@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="title">
+          <h6 class="song_title">Song Name</h6>
+          <small class="song_artist">Song Artist</small>
+        </div>
+        <div class="music_img">
+          <img src="Images/logo_music.jpg" alt="Song_img" class="img" />
+        </div>
+        <audio class="song" src=""></audio>
+        <div class="timer">
+          <span class="start_time">0:00</span>
+          <span class="end_time">0:00</span>
+        </div>
+        <div class="time_bar">
+          <input type="range" class="time_line" value="0" />
+        </div>
+        <div class="controls">
+          <i class="fa-solid fa-backward pre" title="Previous"></i>
+          <i class="fa-solid fa-play play" title="Play"></i>
+          <i class="fa-solid fa-forward next" title="Next"></i>
+        </div>
+      </div>
+    </div>
+  <script src="music_player.js"></script>
+  </body>
+</html>
